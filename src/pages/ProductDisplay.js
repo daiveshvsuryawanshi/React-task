@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect}  from "react";
 import {  useParams } from "react-router-dom"
 import './../index.css'
 import Productapi from "../api/Productapi";
@@ -6,7 +6,9 @@ import Productapi from "../api/Productapi";
 function ProductDisplay() {
     const { id } = useParams()
     // const { path } = useRouteMatch()
-
+    useEffect(() => {
+        document.title = "Product Details";  
+      }, []); 
 
     return (
         <>

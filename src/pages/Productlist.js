@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Productapi from "../api/Productapi";
 import { useNavigate } from "react-router-dom";
 import { Link, } from "react-router-dom";
 
 
 const Productlist = () => {
+
+    useEffect(() => {
+        document.title = "Product";  
+      }, []);
+
     const navigate = useNavigate();
 
     const [storeData, setstoredata] = useState(Productapi);

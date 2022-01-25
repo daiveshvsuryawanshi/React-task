@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Contactapi from "../api/Contactapi";
 
 const Contact = () => {
+    useEffect(() => {
+        document.title = "Contact Us";  
+      }, []);
+
     const [Contactdata, setContactdata] = useState(Contactapi)
     return (
 

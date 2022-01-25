@@ -1,7 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 const Aboutus = () => {
-
+    useEffect(() => {
+        document.title = "About us";  
+      }, []);
     return (
         <>
             <section className="common-section our-services">

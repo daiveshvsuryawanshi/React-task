@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useEffect} from "react";
 import About from './About';
 import Banner from './Banner';
 import Store from './Store';
 
 const Header = () => {
+    useEffect(() => {
+        document.title = "ABC Shop";  
+      }, []);
     return (
         <>
             <header>
