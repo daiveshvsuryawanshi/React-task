@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Productapi from "../api/Productapi";
+import { useNavigate } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 
 const Productlist = () => {
+    const navigate = useNavigate();
 
     const [storeData, setstoredata] = useState(Productapi);
 
@@ -86,19 +89,23 @@ const Productlist = () => {
                                 <>
                                     <div
                                         className="col-11 col-md-6 col-lg-3 col-xxl-3 work-container-subdiv"
-                                        key={id}>
-                                    
+                                        key={id} 
+                                    >
+                                        <Link to={`/Productlist/${id}`}>
                                         <img src={img} alt="images" className="img-fluid img-product" />
                                         <h4 className="sub-heading fw-bolder">{title}</h4>
-                                        <p className="main-hero-para fw-bold">{price}</p>
+                                        <p className="main-hero-para fw-bold">{price}</p> {" "}
+                                        </Link>
+
                                     </div>
+
+
                                 </>
                             );
                         })}
                     </div>
                 </div>
             </section>
-            
 
         </>
     );
