@@ -43,7 +43,7 @@ const Productlist = () => {
 
             <div class="container mt-5">
                 <div class="row d-flex pt-5">
-                    <div class="col-6 mx-auto">
+                    <div class="col-10 col-md-6 mx-auto">
                         <div class="left-and-right-inner-addon input-container">
                             <i class="bi bi-search fs-4 my-auto right me-3"></i>
                             <input type="search" class="form-control" id="search" onChange={onChangeHandle} placeholder="Search Product..." />
