@@ -3,6 +3,7 @@ const Productapi = [
         id: 1,
         idindex:1,
         img: "assets/img/1.png",
+        image: "assets/img/1.png",
         title: "Chand Bali",
         price: "₹: 10999",
         name: "earring",

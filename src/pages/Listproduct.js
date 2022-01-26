@@ -1,5 +1,5 @@
 import React from "react";
-import {Productapi} from "./../api/Productapi";
+import { Productapi } from "./../api/Productapi";
 import { useNavigate } from "react-router-dom";
 
 const Listproduct = () => {
